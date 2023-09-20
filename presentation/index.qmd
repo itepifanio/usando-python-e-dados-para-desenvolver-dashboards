@@ -1,0 +1,82 @@
+---
+title: "Usando Python e dados para desenvolver dashboards, interfaces e aplicações"
+subtitle: "Você não precisa de Javascript*"
+format:
+  revealjs:
+    slide-number: true
+    css: styles.css
+    footer: Python & Dados para dashboards
+---
+
+## Olá, sou o Ítalo Epifânio {.smaller}
+
+::: {.fragment}
+- Norte-rio-grandense da trombinha do elefante
+![](images/mapa-pau-dos-ferros.png){.absolute top=0 right=0 width=350 height=238}
+:::
+::: {.fragment}
+- Cientista da Computação*
+- RnD Python Developer
+- Desenvolvedor Open Source
+:::
+
+::: {.fragment}
+- Contribuidor da comunidade Python (Grupy RN)
+![](images/grupyrn.png){.absolute top=250 right=0}
+:::
+
+## Sumário {.smaller}
+
+Esse tutorial irá:
+
+- Discutir motivação de Python & Dashboards
+- Estado da arte de desenvolvimento de interfaces usando Python
+- Ipywidgets
+- Dash & Plotly
+- Streamlit
+- Solara
+- Como eu uso essas ferramentas no dia a dia
+
+## Python & Dashboards
+
+- Desenvolver aplicações web: HTML, CSS, Javascript + linguagem para se comunicar com o servidor
+- Pessoas de dados precisam ter esse conhecimento? 
+- Há uma tendência de ferramentas para pessoas de dados (ipyannotator, pyscript, etc)
+- Python <3 Dados
+- Python + Dados + Web App = Desenvolvimento rápido 
+
+## Interfaces & Python
+
+- Ipywidgets
+- Dash & Plotly
+- Streamlit
+- Solara
+
+## Ipywidgets
+
+- Ferramenta default para ser executada em Jupyter notebooks
+- 
+
+## Dash & Plotly
+
+## Streamlit
+
+- Muito sucinto
+- Fácil de integrar: matplotlib, plotly, pandas, etc
+- Fácil de fazer deploy
+
+- Difícil de customizar: cor de butão, popup, etc
+- Atualiza tudo quando um estado é modificado (ineficiente)
+
+- Seus casos de uso:
+    - Prototipação e deploy rápido de aplicações
+    - Interfaces simples, que requer pouca atualização e pouca customização
+
+- Seus casos de não uso:
+    - Interfaces complexas ou com muitos estados
+    - Aplicativos que requerem comportamentos mais customizáveis
+
+## Solara
+ 
+- 
+
