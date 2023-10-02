@@ -1,3 +1,7 @@
 pandas
 matplotlib
 notebook
+streamlit
+ipywidgets
+solara
+dash
