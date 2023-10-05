@@ -3,3 +3,5 @@ nbs/*.csv.*
 nbs/.~*
 nbs/.ipynb_checkpoints
 venv
+index.html
+index_files

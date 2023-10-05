@@ -39,11 +39,37 @@ Esse tutorial irá:
 
 ## Python & Dashboards
 
-- Desenvolver aplicações web: HTML, CSS, Javascript + linguagem para se comunicar com o servidor
+![](images/frontend.webp){width="100%"}
+
+## Python & Dashboards
+
 - Pessoas de dados precisam ter esse conhecimento? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/jupyter-notebook.png)
+:::
+
+::: {.column width="50%"}
+![](images/canivete-suiço.webp){fig-align="center" width=50%}
+:::
+
+::::
+
+## Python & Dashboards
+
 - Há uma tendência de ferramentas para pessoas de dados (ipyannotator, pyscript, etc)
+
+![](images/pyscript.png)
+
+
+## Python & Dashboards
+
 - Python <3 Dados
 - Python + Dados + Web App = Desenvolvimento rápido 
+
+![](images/pandas.webp){fig-align="center"}
 
 ## Interfaces & Python
 
@@ -52,31 +78,67 @@ Esse tutorial irá:
 - Streamlit
 - Solara
 
+![](images/build-everything-with-python.webp){.absolute right=0 top=10% width="70%"}
+
 ## Ipywidgets
 
+::::{.columns}
+
+:::{.column width="50%"}
 - Ferramenta default para ser executada em Jupyter notebooks
-- 
+- Consegue ser distribuida como pacote python
+- Transforma-se jupyter notebooks em dashboards utilizando a biblioteca Voilà
+:::
+
+:::{.column width="50%"}
+![](images/PIL-ipywidgets.gif)
+:::
+
+::::
 
 ## Dash & Plotly
 
+::::{.columns}
+
+:::{.column width="50%"}
+- Web app de dados com low code 
+- Versão enterprise para escalar aplicações
+:::
+
+:::{.column width="50%"}
+![](images/dash_and_plotly.gif)
+:::
+
+::::
+
 ## Streamlit
 
+::::{.columns}
+
+:::{.column width="50%"}
 - Muito sucinto
 - Fácil de integrar: matplotlib, plotly, pandas, etc
 - Fácil de fazer deploy
+:::
 
+:::{.column width="50%"}
 - Difícil de customizar: cor de butão, popup, etc
 - Atualiza tudo quando um estado é modificado (ineficiente)
+:::
 
-- Seus casos de uso:
-    - Prototipação e deploy rápido de aplicações
-    - Interfaces simples, que requer pouca atualização e pouca customização
+::::
 
-- Seus casos de não uso:
-    - Interfaces complexas ou com muitos estados
-    - Aplicativos que requerem comportamentos mais customizáveis
+## Streamlit
+
+![](images/streamlit-dashboard.gif)
 
 ## Solara
- 
-- 
 
+![](images/solara.mov)
+
+## Conclusão
+
+- Você pode fazer muita coisa com Jupyter notebook e de forma rápida
+- Ferramentas para cientistas de dados/pessoas de aprendizado de máquina são uma trend
+- Essas ferramentas open source podem ser uma entrada para o mundo de IA
+- Aplicações com interface usando somente Python já são possíveis
