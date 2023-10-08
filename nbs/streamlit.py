@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+@st.cache_data
+def load_data() -> pd.DataFrame:
+    return pd.read_csv('turma_matricula_docente_filtrados.csv')
+
 def plot_pie_chart(data):
     contagem_descricao = data['descricao'].value_counts()
     porcentagens = (contagem_descricao / contagem_descricao.sum()) * 100
@@ -19,7 +23,7 @@ def plot_pie_chart(data):
 
     st.pyplot(fig)
 
-df = pd.read_csv('turma_matricula_docente_filtrados.csv')
+df = load_data()
 
 st.title("Taxa de Aprovação por Curso, Componente e Docente")
 
@@ -34,7 +38,7 @@ df_unidade = df[df['unidade_responsavel'] == unidade_selecionada[1]]
 
 componente_selecionado = st.selectbox(
     'Selecione o Componente Curricular:',
-    df_unidade[['nome_x', 'id_componente']].drop_duplicates().values.tolist(),
+    df_unidade[['nome_componente', 'id_componente']].drop_duplicates().values.tolist(),
     format_func=lambda x: x[0]
 )
 
@@ -42,7 +46,7 @@ df_componente = df_unidade[df_unidade['id_componente'] == componente_selecionado
 
 docente_selecionado = st.selectbox(
     'Selecione o Docente:',
-    df_componente[['nome_y', 'siape']].drop_duplicates().values.tolist(),
+    df_componente[['nome_docente', 'siape']].drop_duplicates().values.tolist(),
     format_func=lambda x: x[0]
 )
 
@@ -52,6 +56,6 @@ if unidade_selecionada and componente_selecionado and docente_selecionado:
                     (df['id_componente'] == componente_selecionado[1]) &
                     (df['siape'] == docente_selecionado[1])]
     
-    df_filtrado = df_componente.drop_duplicates(subset='discente')
+    df_filtrado = df_filtrado.drop_duplicates(subset='discente')
 
     plot_pie_chart(df_filtrado)

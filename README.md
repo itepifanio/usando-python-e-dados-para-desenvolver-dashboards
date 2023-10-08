@@ -6,6 +6,10 @@ Esse repositório, além dos slides, contém códigos que utilizam
 diversas ferramentas para desenvolver dashboards que indiquem 
 a taxa de aprovação de um professor na UFRN.
 
+## Apresentação
+
+A apresentação foi feita utilizando [Quarto](https://quarto.org/) e pode ser executada utilizando `quarto preview presentation/index.qmd`
+
 ## Preparação dos dados
 
 Execute o notebook `nbs/00_data_filtering.ipynb` para baixar, filtrar e 
