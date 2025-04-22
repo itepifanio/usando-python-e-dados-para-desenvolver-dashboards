@@ -1,8 +1,8 @@
-pandas
-matplotlib
+pandas==2.1.1
+matplotlib==3.8.0
 notebook
 streamlit
 ipywidgets
 solara
-dash
+dash==2.13.0
 ipympl
